@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Geiaaa</title>
+    <script type="text/javascript" src="/socket.io.js"></script>
+  </head>
+  <body>
+    <script>
+      var socket = io('http://localhost:3030');
+
+        socket.on('notification', (message, count) => {
+          console.log('O server eipe' + message + count);
+        });
+    </script>
+  </body>
+</html>
